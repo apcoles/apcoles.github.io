@@ -2047,7 +2047,7 @@ input, select, textarea {
 	#footer .copyright {
 		color: #505051;
 		font-size: 0.9em;
-		position: absolute;
+		position: relative;
 		bottom: 1em;
 		margin: 0;
 		
