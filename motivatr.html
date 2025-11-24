@@ -1,176 +1,481 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study Template - Product Manager / UX Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Typography */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .badge-default {
+            background-color: rgb(15 23 42);
+            color: white;
+        }
+        
+        .badge-outline {
+            border: 1px solid rgb(226 232 240);
+            background-color: transparent;
+            color: rgb(15 23 42);
+        }
+        
+        .badge-secondary {
+            background-color: rgb(241 245 249);
+            color: rgb(15 23 42);
+        }
+        
+        .card {
+            border-radius: 0.5rem;
+            border: 1px solid rgb(226 232 240);
+            background-color: white;
+        }
+        
+        .separator {
+            height: 1px;
+            background-color: rgb(226 232 240);
+        }
+        
+        .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+        }
+        
+        .icon-lg {
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: rgb(15 23 42);
+                color: rgb(241 245 249);
+            }
+            
+            .badge-outline {
+                border-color: rgb(51 65 85);
+                color: rgb(241 245 249);
+            }
+            
+            .badge-secondary {
+                background-color: rgb(30 41 59);
+                color: rgb(241 245 249);
+            }
+            
+            .card {
+                border-color: rgb(51 65 85);
+                background-color: rgb(30 41 59);
+            }
+            
+            .separator {
+                background-color: rgb(51 65 85);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-50">
+    <!-- Hero Section -->
+    <div class="relative h-[500px] bg-gradient-to-br from-slate-900 to-slate-700 overflow-hidden">
+        <img 
+            src="https://images.unsplash.com/photo-1755985022555-09c0ec136e95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9kdWN0JTIwZGVzaWduJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2Mzk3MDA4NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="Project hero"
+            class="w-full h-full object-cover opacity-30"
+            onerror="this.src='https://via.placeholder.com/1080x500/334155/ffffff?text=Project+Hero'"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="max-w-4xl mx-auto px-6 text-center text-white">
+                <span class="badge mb-4 bg-white/20 text-white border border-white/30">
+                    Product Design Case Study
+                </span>
+                <h1 class="mb-4 text-white">Redesigning the Mobile Banking Experience</h1>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto">
+                    How we increased user engagement by 45% and reduced support tickets by 60% through a user-centered redesign
+                </p>
+            </div>
+        </div>
+    </div>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Home</a>
-				<nav>
-					<ul>
-						<li><a href="zaky.html">Zaky</a></li>
-						<li><a href="motivatr.html" class="active">Motivatr</a></li>
-						<li><a href="babybot.html">Babybot</a></li>
-						<li><a href="eyetracking.html">Eyetracking</a></li>
-						<li><a href="speakerbus.html">Speakerbus</a></li>
-						<li><a href="litreview.html">AI Literature Review</a></li>
-					</ul>
-				</nav>
-			</header>
+    <!-- Project Info Bar -->
+    <div class="bg-slate-100 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="flex items-center gap-3">
+                    <svg class="icon text-slate-500" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <div>
+                        <div class="text-sm text-slate-600">Timeline</div>
+                        <div>3 months</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <svg class="icon text-slate-500" viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <div>
+                        <div class="text-sm text-slate-600">Team</div>
+                        <div>5 members</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <svg class="icon text-slate-500" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                    <div>
+                        <div class="text-sm text-slate-600">Role</div>
+                        <div>Lead PM</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <svg class="icon text-slate-500" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <div>
+                        <div class="text-sm text-slate-600">Year</div>
+                        <div>2024</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+        <!-- Overview Section -->
+        <section>
+            <div class="mb-6">
+                <span class="badge badge-outline mb-2">01 — Overview</span>
+                <h2>Project Overview</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3>Context</h3>
+                    <p class="text-slate-600">
+                        Our mobile banking app was experiencing high churn rates and low engagement. 
+                        User research revealed that customers found the app confusing and struggled to 
+                        complete basic tasks like transferring money or paying bills.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h3>Goal</h3>
+                    <p class="text-slate-600">
+                        Redesign the mobile banking experience to improve usability, increase user 
+                        engagement, and reduce customer support inquiries. Our target was to achieve 
+                        a NPS score of 50+ and reduce task completion time by 30%.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-			<!-- Main -->
-				<section id="main" class="wrapper">
-					<div class="inner">
-						<h1 class="major">"Motivatr" Group UX Design</h1>
-						<span class="image fit"><img src="images/motivatr-cover-detail.jpg" alt="" /></span>
-					<p>
-						As a member of a three&ndash;person team, we prototyped the design for a mobile application intended to help users curb bad procrastination habits.
-					</p>
-					<p>
-						Motivatr is a mobile application prototype that will help students and young professionals shed old, destructive habits and form new and lasting routines &mdash; one day at a time. The app offers to-do lists, time management work timers based on the Pomodoro Method, and upcoming task notifications. Most importantly, Motivatr helps users cultivate first&ndash;hand knowledge about why they procrastinate.
-					</p>
+        <div class="separator"></div>
 
-					<p>
-						The design process consisted of the following stages, based on The UX Book (Hartson &amp; Pyla):
-					</p>
-					<strong>
-						Contextual Inquiry
-					</strong>
-					<ul class="nested">
-						<li>User research on 10 participants, targeting people who wished to improve their work and study efficiency, and had tried different productivity methods in the past</li>
-						<li>Collected qualitative and quantitative data with interview questions designed to illuminate existing study habits and tendencies to procrastinate</li>
-					</ul>
-					<strong>
-						Contextual Analysis
-					</strong>
-					<ul class="nested">
-						<li>Generated work activity notes from interview responses, then organized notes into categories</li>
-						<li>Created heirarchical work activity affinity diagram (WAAD) in order to visualize users' established planning activities</li>
-						<li>Used the WAAD to extract formal requirements (summarized below):
-							<ul class="nested">
-								<li>Functions: Calendar with multiple views, Checklists for tasks, Ease stress, Support handwriting, Multi-device synchronization, "Pomodoro Method" timer
-								</li>
+        <!-- Problem Section -->
+        <section>
+            <div class="mb-6">
+                <span class="badge badge-outline mb-2">02 — Problem</span>
+                <h2>The Challenge</h2>
+            </div>
+            <div class="card p-8 bg-slate-50">
+                <div class="space-y-6">
+                    <p>
+                        Through user interviews and analytics, we identified several critical pain points:
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="space-y-2">
+                            <div class="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h4>Complex Navigation</h4>
+                            <p class="text-sm text-slate-600">
+                                Users needed 5+ taps to complete basic tasks. Navigation structure was unclear and inconsistent.
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h4>Low Discoverability</h4>
+                            <p class="text-sm text-slate-600">
+                                Key features were hidden. 70% of users were unaware of available features.
+                            </p>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="w-12 h-12 rounded-lg bg-yellow-100 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                    <polyline points="16 7 22 7 22 13"></polyline>
+                                </svg>
+                            </div>
+                            <h4>Poor Feedback</h4>
+                            <p class="text-sm text-slate-600">
+                                Lack of clear status indicators and error messages caused confusion and repeated support tickets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-								<li>Ease of Use: Quick access to planning functions, Separate big tasks into smaller ones, Easily edit tasks
-								</li>
+        <div class="separator"></div>
 
-								<li>Customization: Set task priority, Use colors to tag tasks and events, Customizable reminders, Suit users' personal habits
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<div style="">
-						<span style="float:right; padding-right: 7em;">
-							<strong>
-								Prototypes
-							</strong>
-							<ul class="nested">
-								<li>Sketching and Ideation</li>
-								<li>Wireframe / Lo-Fi Prototype</li>
-								<li>Hi-Fi, Interactive Prototype</li>
-								<li>User Testing and Evaluation</li>
-							</ul>
-						</span>
+        <!-- Research Section -->
+        <section>
+            <div class="mb-6">
+                <span class="badge badge-outline mb-2">03 — Research</span>
+                <h2>Understanding Our Users</h2>
+            </div>
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h3>Research Methods</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="card p-6">
+                            <h4 class="mb-2">Qualitative Research</h4>
+                            <ul class="space-y-2 text-slate-600">
+                                <li>• 15 user interviews</li>
+                                <li>• 8 usability testing sessions</li>
+                                <li>• Customer support ticket analysis</li>
+                            </ul>
+                        </div>
+                        <div class="card p-6">
+                            <h4 class="mb-2">Quantitative Research</h4>
+                            <ul class="space-y-2 text-slate-600">
+                                <li>• Analytics review (50k+ users)</li>
+                                <li>• A/B testing on key flows</li>
+                                <li>• Survey responses (n=500)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img
+                    src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMG1lZXRpbmd8ZW58MXx8fHwxNzYzOTg2MDkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    alt="Team collaboration"
+                    class="w-full h-[400px] object-cover rounded-lg"
+                    onerror="this.src='https://via.placeholder.com/1080x400/334155/ffffff?text=Research+Process'"
+                />
+            </div>
+        </section>
 
-						<div >
-							<strong>
-								Interface Models
-							</strong>
-							<ul class="nested">
-								<li>Usage Model with roles</li>
-								<li>Task Structure Model</li>
-								<li>Task Interaction Models</li>
-								<li>Personae</li>
-								<li>Storyboards</li>
-							</ul>
-						</div>
-						</div>
-						<div style="clear:both;">
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<a href="images/waad1.jpg">
-									<img class="image fit" src="images/waad1.jpg" />
-									</a>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<a href="images/waad2.png">
-									<img class="image fit" src="images/waad2.png" />
-									</a>
-								</div>
+        <div class="separator"></div>
 
-								<div class="col-4 col-12-mobile">
-									<a href="images/waad3.png">
-									<img class="image fit" src="images/waad3.png" />
-									</a>
-								</div>
-							</div>
+        <!-- Solution Section -->
+        <section>
+            <div class="mb-6">
+                <span class="badge badge-outline mb-2">04 — Solution</span>
+                <h2>Design Solutions</h2>
+            </div>
+            <div class="space-y-8">
+                <p class="text-slate-600">
+                    Based on our research insights, we implemented a comprehensive redesign focused 
+                    on simplicity, clarity, and user empowerment.
+                </p>
+                <img
+                    src="https://images.unsplash.com/photo-1694878981750-3b1f8d97abff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1c2VyJTIwaW50ZXJmYWNlJTIwbW9ja3VwfGVufDF8fHx8MTc2Mzk5NzYxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    alt="UI Design"
+                    class="w-full h-[500px] object-cover rounded-lg"
+                    onerror="this.src='https://via.placeholder.com/1080x500/334155/ffffff?text=Design+Solution'"
+                />
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div class="card p-6">
+                        <svg class="w-8 h-8 mb-4 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l2 7h7l-5.5 4.5 2 7L12 16l-5.5 4.5 2-7L3 9h7z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <h4 class="mb-2">Simplified Information Architecture</h4>
+                        <p class="text-sm text-slate-600">
+                            Restructured navigation to reduce the number of taps needed for common tasks. 
+                            Implemented a bottom navigation bar with clear labels and icons.
+                        </p>
+                    </div>
+                    <div class="card p-6">
+                        <svg class="w-8 h-8 mb-4 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l2 7h7l-5.5 4.5 2 7L12 16l-5.5 4.5 2-7L3 9h7z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <h4 class="mb-2">Quick Actions Dashboard</h4>
+                        <p class="text-sm text-slate-600">
+                            Created a customizable home screen with one-tap access to frequently used 
+                            features like transfers, bill pay, and account details.
+                        </p>
+                    </div>
+                    <div class="card p-6">
+                        <svg class="w-8 h-8 mb-4 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l2 7h7l-5.5 4.5 2 7L12 16l-5.5 4.5 2-7L3 9h7z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <h4 class="mb-2">Improved Feedback System</h4>
+                        <p class="text-sm text-slate-600">
+                            Added clear success confirmations, progress indicators, and helpful error 
+                            messages to guide users through each action.
+                        </p>
+                    </div>
+                    <div class="card p-6">
+                        <svg class="w-8 h-8 mb-4 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l2 7h7l-5.5 4.5 2 7L12 16l-5.5 4.5 2-7L3 9h7z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <h4 class="mb-2">Enhanced Visual Hierarchy</h4>
+                        <p class="text-sm text-slate-600">
+                            Redesigned UI with consistent typography, spacing, and color usage to 
+                            improve scannability and reduce cognitive load.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<a href="images/usage-model.png">
-									<img class="image fit" src="images/usage-model.png"/>
-									</a>
-								</div>
-								<div class="col-8 col-12-mobile">
-									<a href="images/task-structure.jpg">
-									<img class="image fit" src="images/task-structure.jpg" />
-									</a>
-								</div>
+        <div class="separator"></div>
 
-							</div>
+        <!-- Results Section -->
+        <section>
+            <div class="mb-6">
+                <span class="badge badge-outline mb-2">05 — Results</span>
+                <h2>Impact & Outcomes</h2>
+            </div>
+            <div class="space-y-8">
+                <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwZGFzaGJvYXJkfGVufDF8fHx8MTc2MzkzNzQ1M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    alt="Results dashboard"
+                    class="w-full h-[400px] object-cover rounded-lg"
+                    onerror="this.src='https://via.placeholder.com/1080x400/334155/ffffff?text=Results+Dashboard'"
+                />
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="card p-6 text-center">
+                        <div class="text-4xl text-green-600 mb-2">+45%</div>
+                        <div class="text-slate-600">User Engagement</div>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <div class="text-4xl text-green-600 mb-2">-60%</div>
+                        <div class="text-slate-600">Support Tickets</div>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <div class="text-4xl text-green-600 mb-2">-35%</div>
+                        <div class="text-slate-600">Task Time</div>
+                    </div>
+                    <div class="card p-6 text-center">
+                        <div class="text-4xl text-green-600 mb-2">56</div>
+                        <div class="text-slate-600">NPS Score</div>
+                    </div>
+                </div>
+                <div class="card p-8 bg-slate-50 border-slate-300">
+                    <h4 class="mb-4">Key Achievements</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>• Reduced average task completion time from 3.5 minutes to 2.3 minutes</li>
+                        <li>• Increased daily active users by 32%</li>
+                        <li>• Improved app store rating from 3.2 to 4.6 stars</li>
+                        <li>• Achieved 89% task success rate in usability testing (up from 62%)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-							<div class="row">
-								<div class="col-8 col-12-mobile">
-									<a href="images/persona.png">
-									<img class="image fit" src="images/persona.png"/>
-									</a>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<a href="images/storyboard.png">
-									<img class="image fit" src="images/storyboard.png" />
-									</a>
-								</div>
-							</div>
+        <div class="separator"></div>
 
-							<div class="row" >
-								<div class="col-3 col-6-mobile">
-									<a href="images/sketch1.jpg">
-									<img class="image fit" src="images/sketch1.jpg" />
-									</a>
-								</div>
-								<div class="col-3 col-6-mobile">
-									<a href="images/sketch6.png">
-									<img class="image fit" src="images/sketch6.png" />
-									</a>
-								</div>
-								<div class="col-3 col-6-mobile">
-									<a href="images/wireframe1.png">
-									<img class="image fit" src="images/wireframe1.png" />
-									</a>
-								</div>
-								<div class="col-3 col-6-mobile">
-									<a href="images/hifi1.png">
-									<img class="image fit" src="images/hifi1.png" />
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>
-		</div>
-	</body>
+        <!-- Learnings Section -->
+        <section>
+            <div class="mb-6">
+                <span class="badge badge-outline mb-2">06 — Learnings</span>
+                <h2>Key Takeaways</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="card p-6">
+                    <h4 class="mb-2">Start with User Research</h4>
+                    <p class="text-slate-600">
+                        The most impactful design decisions came directly from user interviews and 
+                        usability testing. Investing time upfront in research saved weeks of development time.
+                    </p>
+                </div>
+                <div class="card p-6">
+                    <h4 class="mb-2">Iterate Based on Data</h4>
+                    <p class="text-slate-600">
+                        Continuous A/B testing and analytics monitoring allowed us to validate assumptions 
+                        and make data-driven refinements throughout the project.
+                    </p>
+                </div>
+                <div class="card p-6">
+                    <h4 class="mb-2">Cross-Functional Collaboration</h4>
+                    <p class="text-slate-600">
+                        Close collaboration between design, engineering, and customer support teams was 
+                        crucial for identifying problems and implementing effective solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-slate-100 border-t border-slate-200 mt-16">
+        <div class="max-w-5xl mx-auto px-6 py-12 text-center">
+            <h3 class="mb-2">Interested in learning more?</h3>
+            <p class="text-slate-600 mb-6">
+                I'd be happy to discuss this project in more detail
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <span class="badge badge-secondary cursor-pointer">View Next Project →</span>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
